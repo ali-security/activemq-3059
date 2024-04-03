@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: "Test"
         run: |
-            mvn -B -e test -pl activemq-unit-tests -Dactivemq.tests=all
+            mvn -B -e test -pl activemq-client
       - name: "Build"
         run: |
             mvn -U -B -e clean install -DskipTests
